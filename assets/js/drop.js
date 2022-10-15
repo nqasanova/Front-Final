@@ -8,4 +8,3 @@ $('.c1').mouseover(function(){
 $('.c1').mouseleave(function(){
     $('.c1').hide()
 })
-

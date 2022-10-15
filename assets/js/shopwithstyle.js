@@ -41,8 +41,6 @@ sortsopens.forEach(sortopen=>{
   })
 })
 
-
-
 $(document).ready(function() {
   $('.noUi-handle').on('click', function() {
     $(this).width(50);

@@ -130,8 +130,6 @@ $('.slider7').slick({
   ]
 });
 
-
-
 function getTimeRemaining(endtime) {
   var t = Date.parse(endtime) - Date.parse(new Date());
   var seconds = Math.floor((t / 1000) % 60);
@@ -166,7 +164,6 @@ function initializeClock(id, endtime) {
       clearInterval(timeinterval);
     }
   }
-
   updateClock();
   var timeinterval = setInterval(updateClock, 1000);
 }

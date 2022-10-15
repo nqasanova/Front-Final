@@ -1,5 +1,4 @@
 
-// Dropdown1
 const optionMenu = document.querySelector(".select-menu"),
   selectBtn = optionMenu.querySelector(".select-btn"),
   options = optionMenu.querySelectorAll(".option"),
@@ -20,7 +19,6 @@ options.forEach((option) => {
   });
 });
 
-// Dropdown2
 const optionMenu1 = document.querySelector(".select-menu1"),
   selectBtn1 = optionMenu1.querySelector(".select-btn1"),
   options1 = optionMenu1.querySelectorAll(".option1"),

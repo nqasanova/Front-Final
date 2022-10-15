@@ -251,19 +251,10 @@ var catexit=document.querySelector('#cat-exit')
 
 catexit.addEventListener("click",function(){
   catslide.classList.remove('active-cat-sbar')
-  
 })
-
 catmenu.addEventListener("click",function (){
    catslide.classList.add('active-cat-sbar');
 })
-
-
-
-
-
-
-
   var btn = $('#button');
 
 $(window).scroll(function() {
@@ -321,8 +312,6 @@ btn.on('click', function(e) {
   var deadline = new Date(Date.parse(new Date()) + 01 * 24 * 60 * 60 * 1000);
   initializeClock('clockdiv', deadline);
 
-
-
   function getTimeRemaining(endtime) {
     var t = Date.parse(endtime) - Date.parse(new Date());
     var seconds = Math.floor((t / 1000) % 60);
@@ -364,12 +353,6 @@ btn.on('click', function(e) {
   
   var deadline = new Date(Date.parse(new Date()) + 01 * 24 * 60 * 60 * 1000);
   initializeClock('clockdiv-p', deadline);
-/////
-
-
-
-
-
 
   let cards = document.querySelectorAll(".card");
 
@@ -381,8 +364,6 @@ btn.on('click', function(e) {
   })
 
   localStorage.setItem('product',JSON.stringify([]));  
-
-
   function GetProduct() {
 
     let product = JSON.parse(localStorage.getItem('product'));
@@ -410,7 +391,7 @@ btn.on('click', function(e) {
             Name:productName,
             Price:productPrice,
             Count:1
-  
+
            })
         }
         else{
@@ -418,10 +399,8 @@ btn.on('click', function(e) {
         }
 
         localStorage.setItem('product',JSON.stringify(product));
-
       }
     })
-
   }
 
   function CountProduct() {
